@@ -6,14 +6,14 @@ shell:
   program: /usr/local/bin/fish
   args:
     - -l
-    - -c 
+    - -c
     - "tmux attach || tmux new -s tmux"
   # program: /bin/bash
 # You can set shell.program to the path of your favorite shell, e.g. /bin/fish.
 # Entries in shell.args are passed unmodified as arguments to the shell.
 
 # vim: nospell
-  
+
 env:
   TERM: xterm-256color
 
@@ -38,6 +38,7 @@ window:
   # opacity: 0.9
   opacity: 1
   startup_mode: Maximized
+  option_as_alt: Both
 
 scrolling:
   # scrollback is enabled (history > 0).
@@ -111,7 +112,7 @@ custom_cursor_colors: true
 #
 bell:
   animation: EaseOutExpo
-  color: "0xffffff"
+  color: "0x202a36"
   duration: 300
 
 # Key bindings
