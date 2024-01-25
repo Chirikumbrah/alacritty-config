@@ -29,17 +29,29 @@ scrolling:
 # Font configuration (changes require restart)
 font:
   normal:
-    family: DroidSansMono Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Regular
   bold:
-    family: DroidSansMono Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Bold
   italic:
-    family: DroidSansMono Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Italic
   bold_italic:
-    family: DroidSansMono Nerd Font
+    family: JetBrainsMono Nerd Font
     style: Bold Italic
+  # normal:
+  #   family: DroidSansMono Nerd Font
+  #   style: Regular
+  # bold:
+  #   family: DroidSansMono Nerd Font
+  #   style: Bold
+  # italic:
+  #   family: DroidSansMono Nerd Font
+  #   style: Italic
+  # bold_italic:
+  #   family: DroidSansMono Nerd Font
+  #   style: Bold Italic
   size: 15.0
   draw_bold_text_with_bright_colors: true
   offset:
@@ -72,6 +84,8 @@ key_bindings:
   - { key: Equals, mods: Command, action: IncreaseFontSize }
   - { key: Minus, mods: Command, action: DecreaseFontSize }
   - { key: Minus, mods: Command|Shift, action: ResetFontSize }
+  # Create new tmux window
+  - { key: T, mods: Command, chars: "\x02\x63" }
   - { key: PageUp, mods: Shift, chars: "\x1b[5;2~" }
   - { key: PageUp, mods: Control, chars: "\x1b[5;5~" }
   - { key: PageUp, chars: "\x1b[5~" }
